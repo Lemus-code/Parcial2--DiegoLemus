@@ -1,6 +1,6 @@
 # FSM en HDL
 En este apartado se implementa el sistema de VIVEPASS para los centros comerciales de Guatemala. VIVEPASS es un sistema que le permite a los clientes entrar a los parqueos mediante el escaneo de un sticker colocado en el vehículo, con el fin de no tomar ticket y no tener la preocupación de su validación.
-
+Dicho sistema fue implementado en la plataforma de VIVADO, cuyo código puede encontrase en [src](./src/)
 ## Explicación de Sistema VIVEPASS
 Para ejemplificar este sistema se buscó hacerlo de una forma más sencilla. Tomando las siguientes consideraciones:
 - El sticker válido de vivepass es aquel que tiene una longitud de 3 dígitos
@@ -35,3 +35,4 @@ Sus entradas y salidas son:
 
 #### Mapa de estados
 ![Mapa](img/MapaMealy.png)
+
