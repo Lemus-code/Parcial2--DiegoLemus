@@ -1,4 +1,4 @@
-#FSM en HDL
+# FSM en HDL
 En este apartado se implementa el sistema de VIVEPASS para los centros comerciales de Guatemala. VIVEPASS es un sistema que le permite a los clientes entrar a los parqueos mediante el escaneo de un sticker colocado en el vehículo, con el fin de no tomar ticket y no tener la preocupación de su validación.
 
 ## Explicación de Sistema VIVEPASS
@@ -19,7 +19,7 @@ Sus entradas y salidas son:
 1. L = longitud código/sticker [0'bxx]
 
 #### Mapa de Estados
-![Mapa](MapaMoore.png)
+![Mapa](img/MapaMoore.png)
 
 ### MEALY
 Se encarga de abrir o cerrar la talanquera dependiendo de la longitud que la MOORE le entregue. Esta comienza a verificar una vez el auto esté lo suficientemente cerca de la talanquera, esto con un sensor que activa el "Start" del análisis.
@@ -34,4 +34,4 @@ Sus entradas y salidas son:
 2. A = abrir/cerrar [0'bx]
 
 #### Mapa de estados
-![Mapa](MapaMealy.png)
+![Mapa](img/MapaMealy.png)
