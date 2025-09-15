@@ -7,6 +7,9 @@ Para ejemplificar este sistema se buscó hacerlo de una forma más sencilla. Tom
 - El sticker válido de vivepass es aquel que tiene una longitud de 3 dígitos
 - El sistema de control de talanqueras no es considerado, ya que forma parte de la lógica de las mismas y no de VIVEPASS
 
+#### Proceso Ejemplificado
+![Mapa](img/Proceso de Sistema.png
+
 El sistema implementa 2 FSM, una MOORE y MEALY. A continuación se detalla sus funcionalidades:
 ### MOORE
 Se encarga de verificar que el código/sticker contenga una longitud de 3 dígitos. Por ello solo tiene la capacidad de leer hasta 3 dígitos. 
@@ -37,3 +40,32 @@ Sus entradas y salidas son:
 #### Mapa de estados
 ![Mapa](img/MapaMealy.png)
 
+## Archivos
+Hay dos carpetas [src](./src/) e [img](./img/)
+
+En src podrás encontrar los siguientes archivos:
+1. FSM_moore.v --> código system verilog para implementación de MOORE
+2. FSM_mealy.v --> código system verilog para implementación de MEALY
+3. Vivepass_system.v --> código system verilog para implementación completa de VIVEPASS
+
+En img, podrás encontrar imágenes empleadas en este README.
+
+## Simulación en verilog
+Para verificar cómo funciona el sistema empleado, a continuación adjunto el vídeo explicativo del mismo:
+![Vivepass Verilog](https://youtu.be/ppbE6J_HPwU)
+
+Recomendaciones para observar comportamiento completo de Vivepass al momento de simular:
+
+1. Clock --> Force Clock:
+						- Leading edge = 1
+						- Trailing edge = 0
+						- Period = 100 ns
+2. reset --> Force Constant = 0
+3. D 	 --> Force Clock:
+						- Leading edge = 1
+						- Trailing edge = 0
+						- Period = 800 ns
+4. ST 	 --> Force Clock:
+						- Leading edge = 0
+						- Trailing edge = 1
+						- Period = 1000 ns
