@@ -52,7 +52,7 @@ En img, podrás encontrar imágenes empleadas en este README.
 
 ## Simulación en verilog
 Para verificar cómo funciona el sistema empleado, a continuación adjunto el vídeo explicativo del mismo:
-![Vivepass Verilog](https://youtu.be/ppbE6J_HPwU)
+[Vivepass Verilog](https://youtu.be/ppbE6J_HPwU)
 
 Recomendaciones para observar comportamiento completo de Vivepass al momento de simular:
 
