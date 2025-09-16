@@ -6,6 +6,8 @@ En este inciso nos enfocaremos en construir 3 tipos de sumadores en el software 
 2. **Carry-Lookahead Adder (CLA)**  
 3. **Prefix Adder (PA)**  
 
+Estos fueron construidos con 4 bits para ejemplificación.
+
 A continuación se detalla qué es cada uno de ellos y cómo funcionan.
 
 ---
@@ -46,6 +48,8 @@ Podemos encontrar un archivo de excel, donde se hacen comparaciones de los tiemp
 1. Ripple Carry = 129.2 ns
 2. Carry Lookahead = 193.1 ns
 3. Prefix = 57.04 ns
+
+El carry Lookahead queda mayor debido a que la arquitectura fue de 4 bits. Entre mayor son los bits, si se llega a notar la diferencia de velocidades.
 
 ---
 
