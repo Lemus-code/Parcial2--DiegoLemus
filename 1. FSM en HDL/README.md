@@ -83,7 +83,7 @@ El diagrama Mealy muestra cómo el sistema solo abre (`A=1`) si `L=3` y `ST=1`.
 
 ## Video Explicativo
 Aquí puedes ver el video de simulación en Vivado:  
-[![VivePass Video](https://img.youtube.com/vi/ppbE6J_HPwU/0.jpg)](https://youtu.be/ppbE6J_HPwU)
+[![VivePass Video](https://img.youtube.com/vi/ppbE6J_HPwU/0.jpg)](https://youtu.be/WgIRPq6yPKE)
 
 ---
 
