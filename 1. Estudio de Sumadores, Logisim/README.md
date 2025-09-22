@@ -11,7 +11,7 @@ El objetivo es comparar **ventajas, desventajas y rendimiento temporal** de cada
 
 ---
 
-## ipple-Carry Adder (RCA)
+## Ripple-Carry Adder (RCA)
 El **Ripple-Carry** se construye encadenando *Full Adders*:  
 - Cada bit suma `Aᵢ + Bᵢ + Cᵢₙ`.  
 - El *carry out* de un FA se conecta al *carry in* del siguiente.  
