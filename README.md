@@ -4,6 +4,18 @@ Este documento resume los proyectos desarrollados y documentados en protoboard, 
 
 ---
 
+
+## FSM VivePass (control de parqueo)
+- **Plataforma:** Vivado, con HDL (Moore/Mealy).  
+- **Funcionalidad:** validación de stickers de 3 dígitos para acceso a parqueos sin tickets.  
+- **Implementación:**  
+  - FSM para lectura de código.  
+  - Integración de estados “abierto/cerrado”.  
+  - Control de displays mediante entradas/salidas.  
+- **Documentación:** diagramas, tabla de entradas/salidas y explicación en video.  
+[Video Vivado](https://www.youtube.com/watch?v=WgIRPq6yPKE)
+---
+
 ## Estudio de sumadores (4 bits)
 - **Sumadores implementados:** Ripple-Carry, Carry-Lookahead y Prefix Adder.  
 - **Análisis comparativo:**  
@@ -15,17 +27,6 @@ Este documento resume los proyectos desarrollados y documentados en protoboard, 
   - Rápido con límite de área: CLA.  
   - Máxima velocidad: Prefix.  
 - [Video explicación](https://youtu.be/dz2VMQQZ2Hw)
-
----
-
-## FSM VivePass (control de parqueo)
-- **Plataforma:** Vivado, con HDL (Moore/Mealy).  
-- **Funcionalidad:** validación de stickers de 3 dígitos para acceso a parqueos sin tickets.  
-- **Implementación:**  
-  - FSM para lectura de código.  
-  - Integración de estados “abierto/cerrado”.  
-  - Control de displays mediante entradas/salidas.  
-- **Documentación:** diagramas, tabla de entradas/salidas y explicación en video.  
 
 ---
 
