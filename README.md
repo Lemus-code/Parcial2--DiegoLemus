@@ -52,10 +52,3 @@ Este documento resume los proyectos desarrollados y documentados en protoboard, 
 - [Video prototipo](https://youtu.be/4NbTO-8IHlQ)
 
 ---
-
-## Conclusiones Generales
-1. La combinación de **simulación digital (Logisim/Vivado)** y **prototipado en hardware (STM32)** refuerza la comprensión entre teoría y práctica.  
-2. El **multiplexado** es fundamental para optimizar recursos en displays y sistemas embebidos.  
-3. Mantener la hora en **24h internamente** y solo convertir a **12h para visualización** simplifica el diseño.  
-4. El uso de **bare metal** en STM32 permite dominar el acceso a registros, aunque conlleva mayor complejidad de programación.  
-5. Cada arquitectura (ALU, sumadores, FSM, reloj) demuestra distintos compromisos entre **velocidad, área, simplicidad y costo**, aplicables según la necesidad del sistema.  
