@@ -1,7 +1,7 @@
 `timescale 100ns / 1ps
 
 module Flags( input logic [3:0] A,B,
-              input logic Resta,
+              input logic Resta, OP1,
               output logic Cero, Negativo, C_out, Overflow
 
     );
@@ -23,7 +23,7 @@ SumRest SumaResta (
 
 //Flags
 assign Overflow = c3 ^ c2;
-assign Cero = (result_sumrest == 4'b0000);
-assign Negativo = (result_sumrest[3] & Resta);
+assign Cero = ~(|result_sumrest) & ~OP1;
+assign Negativo = ((result_sumrest[3] & Resta)) & ~OP1;
 
 endmodule

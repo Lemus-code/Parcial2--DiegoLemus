@@ -2,14 +2,14 @@
 
 module Pre_Alu( input logic [3:0] A,B,
                 input logic [1:0] OP, OP_S, Shift_R, Shift_L,
-                output logic Cero, Negativo, C_out, Overflow
+                output logic Cero, Negativo, C_out, Overflow,
+                output logic [3:0] Resultado, A_Shift
 
     );
     
 logic resta, c_out2, overflow2; //señales internas de uso 
-logic [3:0] RA_SL, RA_SR, A_Shift; //resultado de Shift A right y left y tipo de A que vamos a usar para operaciones
+logic [3:0] RA_SL, RA_SR; //resultado de Shift A right y left y tipo de A que vamos a usar para operaciones
 logic [3:0] SumRest, R_or, R_and; //Resultado Operaciones
-logic [3:0] Resultado;
 
 //Desplazamiento
 Shift_Left S_L (
@@ -37,7 +37,7 @@ end
 
 //Proceso Suma, no usamos todas las salidas porque no es necesario. Esas salidas le interesan a Flags
 SumRest Alu_SumRest (
-            .A(A),
+            .A(A_Shift),
             .B(B),
             .Resta(OP[0]),
             .SumaRest(SumRest)              
@@ -51,18 +51,19 @@ assign R_and = A_Shift & B;
 
 //Cálculo Flags + Bloqueos
 Flags Alu_Flags(
-            .A(A),
+            .A(A_Shift),
             .B(B),
             .Resta(OP[0]),
             .Cero(Cero),
             .Negativo(Negativo),
             .C_out(c_out2),
-            .Overflow(overflow2)
+            .Overflow(overflow2),
+            .OP1(OP[1])
 );
 
 //Lógica para bloqueo de overflow y c_out
 
-assign C_out = ( overflow2 & ((c_out2 & ~OP[0]) | (~c_out2 & OP[0])));
+assign C_out = (( overflow2 | ((c_out2 & ~OP[0]) | (~c_out2 & OP[0]))) & ~OP[1]);
 assign Overflow = overflow2 & OP[0];
 
 //Selección de operación
