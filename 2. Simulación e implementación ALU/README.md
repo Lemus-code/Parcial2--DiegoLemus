@@ -5,7 +5,8 @@ Este proyecto desarrolla una **Unidad Lógica Aritmética (ALU) de 4 bits**, imp
 - **Logisim Evolution** → Diseño esquemático con compuertas, multiplexores y bloques jerárquicos.  
 - **Vivado (SystemVerilog)** → Modelado en HDL, síntesis y simulación con XSim.  
 
-La ALU permite realizar operaciones aritméticas y lógicas básicas, además de generar **banderas (flags)** que describen el estado del resultado. Este diseño busca ilustrar tanto el enfoque de **simulación académica** como el de **implementación en hardware digital**.  
+La ALU permite realizar operaciones aritméticas y lógicas básicas, además de generar **banderas (flags)** que describen el estado del resultado. Este diseño busca ilustrar tanto el enfoque de **simulación académica** como el de **implementación en hardware digital**.
+Es importante destacar que esta ALU **no incluye el uso de complemento a 2**.  
 
 ---
 

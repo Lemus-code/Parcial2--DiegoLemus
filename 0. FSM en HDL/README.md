@@ -87,3 +87,9 @@ Aquí puedes ver el video de simulación en Vivado:
 
 ---
 
+## Mejoras observadas
+
+La implementación del vivepass puede mejorarse al recibir una entrada de 2 o más bits, de forma que el sistema obtenga el código completo y luego verifique la longitud. Esto debido a que en el mundo real, así es como funciona, la lectura del código completo en lugar de dígito por dígito.
+
+
+---
